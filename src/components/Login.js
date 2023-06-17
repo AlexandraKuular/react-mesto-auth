@@ -37,6 +37,7 @@ function Login({ onSubmit }) {
           id="email"
           placeholder="Email"
           onChange={handleChange}
+          value={formValue.email}
           required
         />
         <span className="error" id="fullnameInput-error"></span>
@@ -47,6 +48,7 @@ function Login({ onSubmit }) {
           id="password"
           placeholder="Пароль"
           onChange={handleChange}
+          value={formValue.password}
           required
         />
         <button className="auth__btn" onClick={handleSubmit}>Войти</button>

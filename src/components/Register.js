@@ -34,6 +34,7 @@ function Register({ onSubmit }) {
           id="email"
           placeholder="Email"
           onChange={handleChange}
+          value={formValue.email}
           required
         />
         <span className="error" id="fullnameInput-error"></span>
@@ -44,6 +45,7 @@ function Register({ onSubmit }) {
           id="password"
           placeholder="Пароль"
           onChange={handleChange}
+          value={formValue.password}
           required
         />
         <button className="auth__btn" onClick={handleSubmit}>Зарегистрироваться</button>
